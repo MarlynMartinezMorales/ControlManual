@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControladorManual.MainPage">
+
+    <StackLayout>
+        <Frame Margin="16" CornerRadius="0" BorderColor="LightGray">
+        <StackLayout Orientation="Horizontal" Margin="16" HorizontalOptions="Center">
+                <Label Text="CONTEO:" FontSize="Large" Margin="8"></Label>
+                <Label Text="0" Margin="16" FontSize="42" HorizontalOptions="Center"></Label>
+            </StackLayout>
+        </Frame>
+        <!--<label text="start developing now" fontsize="title" padding="30,10,30,10"/>
+        <label text="make changes to your xaml file and save to see your ui update in the running app with xaml hot reload. give it a try!" fontsize="16" padding="30,0,30,0"/>
+        <label fontsize="16" padding="30,24,30,0">
+            <label.formattedtext>
+                <formattedstring>
+                    <formattedstring.spans>
+                        <span text="learn more at "/>
+                        <span text="https://aka.ms/xamarin-quickstart" fontattributes="bold"/>
+                    </formattedstring.spans>
+                </formattedstring>
+            </label.formattedtext>
+        </label>-->
+        <StackLayout>
+            <Button Text="Contar" FontSize="Medium"></Button>
+            <Button Text="Reiniciar" FontSize="Medium"></Button>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>
