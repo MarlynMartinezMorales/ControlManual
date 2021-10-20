@@ -8,11 +8,27 @@ using Xamarin.Forms;
 
 namespace ControladorManual
 {
-    public partial class MainPage : ContentPage
+    public partial class MainWindow : Window
     {
-        public MainPage()
+        private int _Conteo;
+
+        public MainWindow()
         {
             InitializeComponent();
+            _Conteo = 0;
         }
+
+        private void ContarButton_Clicked(object sender, EventArgs e)
+        {
+            _Conteo++;
+            ConteoLabel.Text = _Conteo.ToString();
+        }
+
+        private void ReiniciarButton_Clicked(object sender, EventArgs e)
+        {
+            _Conteo = 0;
+            ConteoLabel.Text = _Conteo.ToString();
+        }
+
     }
 }

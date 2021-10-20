@@ -6,8 +6,8 @@
     <StackLayout>
         <Frame Margin="16" CornerRadius="0" BorderColor="LightGray">
         <StackLayout Orientation="Horizontal" Margin="16" HorizontalOptions="Center">
-                <Label Text="CONTEO:" FontSize="Large" Margin="8"></Label>
-                <Label Text="0" Margin="16" FontSize="42" HorizontalOptions="Center"></Label>
+                <Label Text="Conteo:" FontSize="Large" Margin="8"></Label>
+                <Label x:Name="ConteoLabel" Text="0" Margin="16" FontSize="42" HorizontalOptions="Center"></Label>
             </StackLayout>
         </Frame>
         <!--<label text="start developing now" fontsize="title" padding="30,10,30,10"/>
@@ -23,8 +23,8 @@
             </label.formattedtext>
         </label>-->
         <StackLayout>
-            <Button Text="Contar" FontSize="Medium"></Button>
-            <Button Text="Reiniciar" FontSize="Medium"></Button>
+            <Button x:Name="ContarButton" Text="Contar" FontSize="Medium" Clicked="ContarButton_Clicked"></Button>
+            <Button x:Name="ReiniciarButton" Text="Reiniciar" FontSize="Medium" Clicked="ReiniciarButton_Clicked"></Button>
         </StackLayout>
         
     </StackLayout>
