@@ -5,24 +5,15 @@
 
     <StackLayout>
         <Frame Margin="16" CornerRadius="0" BorderColor="LightGray">
-        <StackLayout Orientation="Horizontal" Margin="16" HorizontalOptions="Center">
+            <StackLayout>
                 <Label Text="Conteo:" FontSize="Large" Margin="8"></Label>
-                <Label x:Name="ConteoLabel" Text="0" Margin="16" FontSize="42" HorizontalOptions="Center"></Label>
+                <Label x:Name="ConteoLabel" Text="0" Margin="16" FontSize="42"
+                       HorizontalOptions="Center"></Label>
             </StackLayout>
         </Frame>
-        <!--<label text="start developing now" fontsize="title" padding="30,10,30,10"/>
-        <label text="make changes to your xaml file and save to see your ui update in the running app with xaml hot reload. give it a try!" fontsize="16" padding="30,0,30,0"/>
-        <label fontsize="16" padding="30,24,30,0">
-            <label.formattedtext>
-                <formattedstring>
-                    <formattedstring.spans>
-                        <span text="learn more at "/>
-                        <span text="https://aka.ms/xamarin-quickstart" fontattributes="bold"/>
-                    </formattedstring.spans>
-                </formattedstring>
-            </label.formattedtext>
-        </label>-->
-        <StackLayout>
+
+        <StackLayout  Orientation="Horizontal" Margin="16"
+                    HorizontalOptions="Center">
             <Button x:Name="ContarButton" Text="Contar" FontSize="Medium" Clicked="ContarButton_Clicked"></Button>
             <Button x:Name="ReiniciarButton" Text="Reiniciar" FontSize="Medium" Clicked="ReiniciarButton_Clicked"></Button>
         </StackLayout>
