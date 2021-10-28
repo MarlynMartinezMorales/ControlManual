@@ -7,8 +7,8 @@
         <Frame Margin="16" CornerRadius="0" BorderColor="LightGray">
             <StackLayout>
                 <Label Text="Conteo:" FontSize="Large" Margin="8"></Label>
-                <Label x:Name="ConteoLabel" Text="0" Margin="16" FontSize="42"
-                       HorizontalOptions="Center"></Label>
+                <Label x:Name="ConteoLabel" Margin="16" FontSize="42"
+                       HorizontalOptions="Center" Text="{Binding Conteo}"></Label>
             </StackLayout>
         </Frame>
 
